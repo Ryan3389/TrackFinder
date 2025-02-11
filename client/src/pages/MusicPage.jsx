@@ -32,7 +32,7 @@ function MusicPage() {
             }
         }
         getData()
-    })
+    }, [genre])
     return (
         <h1>Music</h1>
     )
