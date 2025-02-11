@@ -1,0 +1,17 @@
+:root {
+  --dark-gray: #121212;
+  --music-card-bg: #1E1E1E;
+  --white: #EAEAEA;
+  --accent-line: #FF4C29;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}

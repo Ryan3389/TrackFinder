@@ -1,0 +1,86 @@
+:root {
+  --dark-gray: #121212;
+  --music-card-bg: #1E1E1E;
+  --white: #EAEAEA;
+  --white-accent: #eaeaea69;
+  --accent-line: #FF4C29;
+  --btn-blue: #3A86FF;
+}
+
+/* Nav + Footer*/
+header {
+  border-bottom: 1px solid var(--white-accent);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  /* background-color: var(--dark-gray); */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+nav p,
+.nav-links a {
+  color: var(--white);
+}
+
+footer {
+  border: 1px solid;
+  height: 10vh;
+  border-top: 1px solid var(--white-accent);
+  /* background-color: var(--dark-gray); */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-container p,
+a {
+  color: var(--white);
+}
+
+/* Hero section*/
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  background-color: var(--btn-blue);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
