@@ -103,17 +103,31 @@ a {
   margin-top: 5px;
 }
 
+
+.music-section h3 {
+  line-height: 1.5;
+}
+
 .search-form {
   display: flex;
   justify-content: center;
   margin: 10px 0 20px 0;
 }
 
-.music-section h3 {
-  line-height: 1.5;
+.search-btn {
+  background-color: var(--btn-blue);
+  padding: 8px 16px;
+  border: none;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-
+input[type="text"] {
+  border-radius: 5px;
+  padding: 8px 16px;
+}
 
 /* Media Queries */
 
