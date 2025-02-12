@@ -84,3 +84,20 @@ a {
   border-radius: 5px;
   font-size: 1.5rem;
 }
+
+/* Music Page*/
+
+.music-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.music-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.music-img {
+  height: 150px;
+}
