@@ -27,7 +27,7 @@ async function searchMusic(req, res) {
 
         const data = await response.json()
 
-        res.status(200).json({ results: data })
+        res.status(200).json(data)
     } catch (error) {
         console.error(error)
         res.status(500).json({ errorMessage: "Internal server error" })
