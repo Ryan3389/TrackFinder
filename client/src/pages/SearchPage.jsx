@@ -1,10 +1,10 @@
 import { useState } from "react"
+import SongCard from '../components/SongCard'
 function SearchPage() {
     const [formState, setFormState] = useState({
         searchTerm: ""
     })
-    // Grab value in input field
-    //Send to backend
+    const [searchState, setSearchState] = useState([])
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -30,18 +30,24 @@ function SearchPage() {
             }
 
             const data = await response.json()
+
             const topResults = data.results.slice(0, 9)
-            console.log(topResults)
 
+            const updateSearchState = topResults.map(song => ({
+                artistName: song.artistName,
+                collectionName: song.collectionName,
+                img: song.artworkUrl100
+            }))
 
+            setSearchState(updateSearchState)
         } catch (error) {
             console.error(error)
         }
     }
 
     return (
-        <section className="music-section">
-            <form onSubmit={handleFormSubmit}>
+        <>
+            <form onSubmit={handleFormSubmit} className="search-form">
                 <input
                     type="text"
                     name="searchTerm"
@@ -51,7 +57,22 @@ function SearchPage() {
                 />
                 <input type="submit" value="Search" className="search-btn" />
             </form>
-        </section>
+            <section className="music-section">
+                <div className="music-container">
+                    {searchState.map((song, index) => (
+                        <SongCard
+                            artistName={song.artistName}
+                            collectionName={song.collectionName}
+                            img={song.img}
+                            key={index}
+                        />
+                    ))}
+                </div>
+            </section>
+        </>
+
+
+
     )
 }
 

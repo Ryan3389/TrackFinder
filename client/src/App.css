@@ -99,5 +99,37 @@ a {
 }
 
 .music-img {
-  height: 150px;
+  height: 120px;
+  margin-top: 5px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+}
+
+.music-section h3 {
+  line-height: 1.5;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+  .music-img {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .music-img {
+    height: 80px;
+  }
+
+  .footer-container p,
+  .footer-links a {
+    font-size: 0.8rem
+  }
 }

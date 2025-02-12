@@ -4,7 +4,7 @@ function Footer() {
         <footer>
             <div className="footer-container">
                 <p>TrackFinder</p>
-                <span>
+                <span className="footer-links">
                     <Link>Home</Link>
                     <Link>GitHub</Link>
                     <Link>Portfolio</Link>
